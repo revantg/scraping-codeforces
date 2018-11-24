@@ -9,6 +9,10 @@ from codeforces.items import SubmissionData, SubmissionsList
 import os
 import json
 
+# replace this with your path where you want your submissions to be placed
+path = "/home/revant/Desktop/all_programs/"
+#-------------------------------------------------------------------------------------
+
 class CodeforcesPipeline(object):
     
     def gen_prog_file(self, program, submitted_time, time_taken, memory, username, problemname, language, problem_id):
@@ -29,7 +33,8 @@ class CodeforcesPipeline(object):
             full_prog_text = program[0]
             file_name = problemname + '.py'
         
-        path = '/home/revant/Desktop/all_programs/' + problem_id + problemname 
+        global path
+        path += problem_id + problemname 
         if not os.path.exists(path):
             os.mkdir(path)
             os.chdir(path)
