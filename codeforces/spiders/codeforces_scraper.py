@@ -14,7 +14,7 @@ main_url = "http://codeforces.com/"
 all_problems = {}
 
 class LtraGoluSpider(Spider):
-    name = 'ltra_golu'
+    name = 'codeforces'
     # allowed_domains = ['codeforces.com/submissions/ltra_golu']
     # start_urls = ['http://codeforces.com/submissions/ltra_golu/page/1']
     last_submission_id = None
