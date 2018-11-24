@@ -260,7 +260,7 @@ This script generates data for a course in the following format
       "memory": ": 4 KB"
     },
 
-```
+```json
 with the following parameters
 - `` submission_stats `` -  Contains all the details of the submission
 - `` submissionid `` - ID of the submission
@@ -274,7 +274,7 @@ with the following parameters
 - `` program `` - Program
 - `` testcases_data `` - All the testcases
 - `` username `` - Handle of the user 
-
+```
 ``submission_stats`` has the following structure
 ```json
 [{'date_time': '2018-09-05 17:07:27',
@@ -393,6 +393,3 @@ int main()
 - Save the program in user-defined path
 ## Scope
 This spider can be deployed on EC2 which can run at regular user-defined interval (using ``cronjob``) and if a new solution has been submitted, it can be automatically commited to the user's github directory.
-
-
-
